@@ -30,19 +30,42 @@
             flex-direction: column;
         }
 
-        .title {
-            font-size: 2em;
+        #quote {
+            font-size: 1.3em;
+            font-weight: 900;
+            color: rgb(211, 211, 211);
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        #author {
+            font-size: 1em;
             font-weight: 900;
             color: rgb(211, 211, 211);
         }
 
-        .contact, .mail, .twitter {
+        .title {
+            font-weight: bold;
+            color: rgb(211, 211, 211);
+        }
+
+        .float {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .float span {
+            display: block;
+        }
+
+        .contact {
             color: rgb(211, 211, 211) !important;
             letter-spacing: .4em;
             font-weight: bold;
         }
 
-        .mail a, .twitter a {
+        .contact a {
             color: rgb(211, 211, 211);
             text-decoration: none;
         }
@@ -63,11 +86,14 @@
 
 <body>
     <div class="container">
-        <h1 class="title">Hello, world.</h1>
-        <span class="contact">Contact: </span>
-        <span class="mail"><a href="mailto:metadotmy@gmail.com">metadotmy@gmail.com</a></span>
-        <span class="twitter"><a href="https://twitter.com/jhooo_o">@jhooo_o</a></span>
+        <p id="quote"></p>
+        <p id='author'></p>
+        <div class='float'>
+            <p class="title">Hello, World.</p>
+            <span class="contact"><a href="mailto:metadotmy@gmail.com">metadotmy@gmail.com</a></span>
+            <span class="contact"> <a href="https://twitter.com/jhooo_o">@jhooo_o</a></span>
+        </div>
     </div>
 </body>
-
+<script src="sources/script.js"></script>
 </html>
